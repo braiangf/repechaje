@@ -6,7 +6,7 @@ function CrearJugador() {
     nombre: '',
     edad: '',
     cuadro: '',
-    imagen: '', // Almacena la URL de la imagen
+    imagen: '', 
   });
 
   const handleChange = (e) => {
@@ -24,7 +24,7 @@ function CrearJugador() {
     reader.onloadend = () => {
       setJugadorInfo((prevInfo) => ({
         ...prevInfo,
-        imagen: reader.result, // Almacena la URL de la imagen
+        imagen: reader.result, 
       }));
     };
 
